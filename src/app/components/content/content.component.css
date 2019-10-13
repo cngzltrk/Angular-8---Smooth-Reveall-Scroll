@@ -1,0 +1,86 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: Poppins;
+}
+p{
+    font-family: Roboto;
+}
+
+#home{
+    display: flex;/* sıralama */
+    flex-direction: column;/*alta doğru sırala */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(24,39,51, 0.55);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#home:before{
+    content:'';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    background: url('./../../../assets/home.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+#home:hover{
+    background-color: rgba(24,39,51, 0.10);
+}
+.inner{
+    display: flex;/* sıralama */
+    flex-direction: column;/*alta doğru sırala */
+    margin: auto;
+    color: khaki;
+
+}
+#about{
+    display: flex;/* sıralama */
+    flex-direction: column;/*alta doğru sırala */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+}
+.showcase-left h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.showcase-left p{
+    font-size: 30px;
+}
+#about .showcase-left{
+    margin-top:15%; 
+
+}
+#restoran{
+    display: flex;/* sıralama */
+    flex-direction: column;/*alta doğru sırala */
+    
+    padding-top:80px; 
+    text-align: center;
+    position: relative;
+    background-color: #f1f1f1;
+    width: 100%;
+
+}
+#restoran img:hover{
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+
+    z-index:2;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);  
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
